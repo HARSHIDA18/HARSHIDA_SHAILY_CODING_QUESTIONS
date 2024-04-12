@@ -16,7 +16,8 @@ object PrimeNumber{
     throw new IllegalStateException("Failed to find nth prime")
   }
   def main(args: Array[String]): Unit = {
-    val n=10
+    println("Enter the n-th prime number you want = ")
+    val n:Int=scala.io.StdIn.readInt()
     val nth=SeieveOfErathnoisis(n)
     println(s"The $n-th prime number is $nth")
   }
